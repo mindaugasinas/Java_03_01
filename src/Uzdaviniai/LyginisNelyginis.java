@@ -3,21 +3,24 @@ package Uzdaviniai;
 import java.util.Scanner;
 
 public class LyginisNelyginis {
-    public LyginisNelyginis(){
 
-        Scanner sc = new Scanner(System.in);
+    private int _a;
 
-        System.out.println("Iveskite skaiciu");
+    public int getA() {
+        return _a;
+    }
 
-        int a = sc.nextInt();
+    public void setA(int value) {
+        _a = value;
+    }
 
-        if (a%2 == 0){
+    public void skaiciuok() {
+
+        if (_a % 2 == 0) {
             System.out.println("Ivestas skaicius yra lyginis");
-        }
-
-        else
-        {
+        } else {
             System.out.println("Ivestas skaicius yra nelyginis");
         }
     }
 }
+
